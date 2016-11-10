@@ -6,8 +6,8 @@ import {Pipe} from '@angular/core';
 
 export class ObjToKeys{
 
-  transform(value, args:string[]): any{
-    let keys = []
+  transform(value): any{
+    var keys = [];
 
     for(let key in value){
       keys.push(key)

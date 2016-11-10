@@ -59,7 +59,7 @@ export class NewsletterProvider {
     var teacherObject = [{
       title: [],
       teachers: []
-    }]
+    }];
 
     //Temp container
     var container = document.createElement("div");
@@ -77,7 +77,7 @@ export class NewsletterProvider {
     //Add the links to our object
     [].forEach.call(links, function(link){
       teacherObject[0].teachers.push({name: link["innerText"], href: link["href"]});
-    })
+    });
 
     //Now we need the title for this part
     var title = container.getElementsByClassName("title_page");

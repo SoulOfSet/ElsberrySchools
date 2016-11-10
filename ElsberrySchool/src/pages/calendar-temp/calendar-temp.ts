@@ -20,7 +20,6 @@ export class CalendarTemp {
 
 
   constructor(public navCtrl: NavController, public params: NavParams) {
-
     this.srcType = params.data.srcType;
   }
 

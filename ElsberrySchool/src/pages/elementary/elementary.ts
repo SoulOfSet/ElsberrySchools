@@ -13,7 +13,7 @@ export class Elementary {
   pages: any;
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
 
     //Pages the user can access
     this.pages = {
@@ -23,7 +23,7 @@ export class Elementary {
 
   }
 
-  pageClick(page?): any{
+  pageClick(page: any): any{
     this.navCtrl.push(this.pages[page].component, this.pages[page].params)
   }
 

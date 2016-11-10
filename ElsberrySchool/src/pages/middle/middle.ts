@@ -17,7 +17,7 @@ export class Middle {
   pages: any;
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
 
     //Pages the user can access
     this.pages = {

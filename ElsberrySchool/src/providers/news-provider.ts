@@ -41,7 +41,7 @@ export class NewsProvider {
     //Extract data and send it off
     [].forEach.call(newsLinks, function(news){
       newsGroup.push(news['innerHTML']);
-    })
+    });
 
     return newsGroup;
   }
