@@ -1,0 +1,23 @@
+<!--
+  Generated template for the Newsletter page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Elementary - Newsletter</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <p class="list-page-title" text-center="true">{{this.title.month}} {{this.title.day}} {{this.title.year}}</p>
+  <ion-list>
+    <ion-item *ngFor="let teacher of displayTeachObj" (click)="teacherClick(teacher)">
+      <p class="list-page-item">{{teacher.name}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

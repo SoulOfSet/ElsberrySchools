@@ -1,0 +1,15 @@
+.glob-cal-frame{
+  position: relative; padding-bottom: 75%; height: 100%; overflow: hidden;
+
+  iframe{
+    position: absolute; top:0; left: 0; width: 100%; height: 100%;
+  }
+}
+
+.list-page-title {
+  font-size: 2em;
+}
+
+.list-page-item {
+  font-size: 2vw;
+}

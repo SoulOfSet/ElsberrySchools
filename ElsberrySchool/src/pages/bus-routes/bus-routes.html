@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Bus Routes</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <p class="list-page-title" text-center="true">Bus Routes</p>
+  <ion-list>
+    <ion-item *ngFor="let route of routes" (click)="routeClick(route)">
+      <p class="list-page-item">{{route.name}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
