@@ -15,9 +15,7 @@ import {sanitizeUrl} from "@angular/platform-browser/src/security/url_sanitizer"
 })
 export class CalendarTemp {
 
-  sources: any;
   srcType: string;
-
 
   constructor(public navCtrl: NavController, public params: NavParams) {
     this.srcType = params.data.srcType;
